@@ -89,7 +89,7 @@
                 <div class="col-md-6 col-md-offset-3">
                     <div class="newsletter-content wow fadeInDown" data-wow-duration="1s" style="margin-top: 80px;">
                         <h2>Laporan Hasil 1</h2>
-                        <p>(Minggu ke-1) Senin, 14 September 2015</p>
+                        <p>Identifikasi Masalah, 28 Maret 2017</p>
                     </div>
                 </div>
             </div>
@@ -104,8 +104,522 @@
     		<div class="col-md-8 col-md-offset-2">
 	    		<div class="lh-detail__box">
 	    			<!-- <a href="lh.html" class="lh-labelBack"><< Kembali</a> -->
-					<iframe src="lh/LH1.pdf" allowfullscreen="" webkitallowfullscreen="" width="100%" height="650px"></iframe>
+					<!-- <iframe src="lh/LH1.pdf" allowfullscreen="" webkitallowfullscreen="" width="100%" height="650px"></iframe> -->
                     <!-- lib/viewerjs/index.html?zoom=page-width#../../ -->
+                    <style>
+                    #dika li:before { content: counters(item, ".") " "; counter-increment: item }
+                    th{
+                        background-color: #EFEFEF;
+                    }
+                    </style>
+
+                    <h2><b>Data yang Dibutuhkan dan Cara Mengumpulkannya</b></h2>
+                    <ol>
+                        <li id="dika">
+                            <b>Data yang Dibutuhkan</b>
+                            <ol>
+                                <li>
+                                    <b>Order</b>
+                                    <p>
+                                        &emsp;Pada bagian order akan dibutuhkan menu makanan dan minuman yang tersedia di outlet bersangkutan. Informasi yang tercantum pada setiap menu makanan dan minuman tertera seperti dibawah ini : 
+                                    </p>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                            <td width="300">
+                                            <p><strong>Makanan : </strong></p>
+                                            <p>- Nama makanan </p>
+                                            <p>- Harga makanan </p>
+                                            <p>- Nama Toko  </p>
+                                            <p>- Stok makanan  </p>
+                                            </td>
+                                            <td width="138">
+                                            <p><strong>Minuman : </strong></p>
+                                            <p>- Nama makanan </p>
+                                            <p>- Harga makanan </p>
+                                            <p>- Nama Toko  </p>
+                                            <p>- Stok makanan  </p>
+                                            </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li>
+                                    <b>Payment</b>
+                                    <p>
+                                        &emsp;Terdapat dua proses pembayaran yang dapat dilakukan, yaitu secara tunai (Cash on Delivery) dan secara online. Data yang dibutuhkan yaitu : 
+                                    </p>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                            <td width="168">
+                                            <p><strong>Cash on Delivery </strong></p>
+                                            <p>- Struk pembelian  </p>
+                                            <p>- Total Biaya  </p>
+                                            </td>
+                                            <td width="278">
+                                            <p><strong>Online Payment </strong></p>
+                                            <p>- Struk Pembelian </p>
+                                            <p>- Total Biaya </p>
+                                            </td>
+                                         </tr>
+                                        </tbody>
+                                    </table>
+                                </li>
+                                <li>
+                                    <b>Delivery</b>
+                                    <p>
+                                        &emsp;Pada delivery data yang dibutuhkan adalah <strong><em>data pemesanan,</em></strong> yang didalamnya mencakup hal hal dibawah ini :
+                                    </p>
+                                    <p>
+                                        - Nama Pemesan<br>
+                                        - Alamat Pengiriman<br>
+                                        - No Telpon Pemesan<br>
+                                    </ul>
+                                </li>
+                            </ol>  
+                        </li>
+                        <li id="dika">
+                            <b>Cara Mengumpulkan Data yang Dibutuhkan</b><br>
+                            Data Makanan dan Minuman  : Survei ke pujasera Politeknik Negeri Bandung
+                        </li>
+                    </ol>
+
+                    <h2><b>Karakteristik Utama dari User Pengguna Sistem</b></h2>
+                    <ol>
+                        <li id="dika">
+                            <b>Stakeholder</b>
+
+                            <table border="1">
+                                <tbody>
+                                    <tr>
+                                    <th width="146">
+                                    <p> </p>
+                                    </th>
+                                    <th width="144">
+                                    <p>order </p>
+                                    </th>
+                                    <th width="145">
+                                    <p>payment </p>
+                                    </th>
+                                    <th width="145">
+                                    <p>delivery </p>
+                                    </th>
+                                    </tr>
+                                    <tr>
+                                    <th width="146">
+                                    <p>primary </p>
+                                    </th>
+                                    <td width="144">
+                                    <p>Pemesan </p>
+                                    </td>
+                                    <td width="145">
+                                    <p>Pemesan </p>
+                                    </td>
+                                    <td width="145">
+                                    <p>Pemesan &amp; </p>
+                                    <p>Pengantar (driver) </p>
+                                    </td>
+                                    </tr>
+                                    <tr>
+                                    <th width="146">
+                                    <p>secondary </p>
+                                    </th>
+                                    <td width="144">
+                                    <p>Penjual dan Operator Go-food </p>
+                                    </td>
+                                    <td width="145">
+                                    <p>Penjual dan Operator Go-food </p>
+                                    </td>
+                                    <td width="145">
+                                    <p>Penjual dan Operator Go-food </p>
+                                    </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                        <li id="dika">
+                            <b>Karakteristik dari Primary Stakeholder</b>
+                            <table border="1">
+                                <tbody>
+                                <tr>
+                                <th width="146">
+                                <p>Kategori </p>
+                                </th>
+                                <th width="212">
+                                <p>Pemesan </p>
+                                </th>
+                                <th width="223">
+                                <p>Pengantar (Driver) </p>
+                                </th>
+                                </tr>
+                                <tr>
+                                <td width="146">
+                                <p>A) Rentang Usia </p>
+                                </td>
+                                <td width="212">
+                                <p>15-60 tahun </p>
+                                </td>
+                                <td width="223">
+                                <p>17 - 55 tahun yang telah memiliki </p>
+                                <p>SIM  </p>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td width="146">
+                                <p>B) Gender   </p>
+                                </td>
+                                <td width="212">
+                                <p> Pria &amp; Wanita </p>
+                                </td>
+                                <td width="223">
+                                <p> Pria &amp; Wanita </p>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td width="146">
+                                <p>C) Keterampilan </p>
+                                <p>User </p>
+                                </td>
+                                <td width="212">
+                                <p>Intermediete </p>
+                                <p> </p>
+                                </td>
+                                <td width="223">
+                                <p>Intermediete </p>
+                                <p> </p>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td width="146">
+                                <p>D) Bahasa   </p>
+                                </td>
+                                <td width="212">
+                                <p>Bilingual (Indonesia, Inggris) </p>
+                                </td>
+                                <td width="223">
+                                <p>Bilingual (Indonesia, Inggris) </p>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td width="146">
+                                <p>E) Kemampuan </p>
+                                <p>Persptual </p>
+                                </td>
+                                <td width="212">
+                                <p>Penglihatan, pendengaran </p>
+                                </td>
+                                <td width="223">
+                                <p>Penglihatan, pendengaran </p>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td width="146">
+                                <p>F) Kemampuan </p>
+                                <p>Kognitif </p>
+                                </td>
+                                <td width="212">
+                                <p>Membaca, Mendengar </p>
+                                </td>
+                                <td width="223">
+                                <p>Membaca, Mendengar </p>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td width="146">
+                                <p>G) Faktor Budaya</p>
+                                <p>   </p>
+                                </td>
+                                <td width="212">
+                                <p>&bull; Penggunaan icon &amp; label nama harus jelas  </p>
+                                <p>&bull; Warna tampilan tidak mencolok </p>
+                                <p>&bull; Warna font pada label icon netral </p>
+                                <p>&bull; Aspek linguistik atau bahasa dibuat baku </p>
+                                </td>
+                                <td width="223">
+                                <p>&bull; Penggunaan icon &amp; label nama </p>
+                                <p>&bull; Warna tampilan tidak mencolok </p>
+                                <p>&bull; Warna font pada label icon netral </p>
+                                <p>&bull; Aspek linguistik atau bahasa dibuat baku </p>
+                                </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                    </ol>
+
+                    <h2><b>Lingkungan Teknis dan Sosial</b></h2>
+                    <ol>
+                        <li id="dika">
+                            <b>Lingkungan Fisik</b>
+                            <p>
+                            -   Bisa berdiri / duduk; implikasi; sistem dibuat pada platform mobile; <br>
+                            -   Kebutuhan daya listrik rendah; implikasi; sistem yang dibuat tidak menghabiskan dayayang besar; <br>
+                            -   Tingkat pencahayaan disesuaikan dengan tempat; <br>
+                            -   Penggunaan warna saat diluar ruangan/didalam ruangan harus bisa terlihat jelas.</p>
+                        </li>
+                        <li id="dika">
+                            <b>Lingkungan Teknis</b>
+                            <p>
+                            -   Platform   : Mobile (Os : Android) <br>
+                            -   Teknologi  : Smartphone <br>
+                            -   Jaringan   : Koneksi Internet <br>
+                            </p>
+                        </li>
+                        <li id="dika">
+                            <b>Lingkungan Sosial</b>
+                            -   User yang memiliki device (smartphone) dapat mengakses sistem dilingkunan sosial manapun, biasanya lingkungan sosial menengah yang memiliki device berupa smarthphone; <br>
+                            -   Masalah keamanan dari lingkungan tempat user mengakses sistem password yang digunakan user untuk mengakses akunnya harus terjaga kerahasiannya. <br>
+                        </li>
+                        <li id="dika">
+                            <b>Constraints (batasan - batasan)</b>
+                            -   Biaya perancangan / implementasi harus disesuaikan; <br>
+                            -   Power yang digunakan sebisa mungkin tidak mengambil daya yang besar; <br>
+                            -   Memori yang digunakan sebisa mungkin tidak menghabiskan banyak ruang ( memori rekatif redah). 
+                        </li>
+                    </ol>
+
+                    <h2><b>Analisis Task</b></h2>
+                    <ol>
+                        <li id="dika">
+                            <b>Driver ( mencakup delivery dan payment)</b>
+                            <p>Karakter utama berdasarkan task yang dilakukan : </p>
+                            <p>
+                            -   Driver memiliki keterampilan intermediet untuk menjalankan aplikasi khusus driver; <br>
+                            -   Driver harus memiliki pengetahuan mengenai metode pembayaran yang berlaku; <br>
+                            -   Driver harus memiliki sikap yang cekatan jika saja pada proses order terjadi pembatalan, baik oleh driver maupun oleh pemesan;<br>
+                            -   Pembatalan oleh driver bisa di sebabkan oleh restoran / toko yang bersangkutan tutup atau menu yang dipesan tidak tersedia. <br>
+                            -   Driver harus bisa memilih orderan mana yang sesuai dengan keadaan driver. Contoh, pada Go-Food driver yang memungkinkan untuk mengambil orderan adalah driver yang lokasinya dekat dengan toko yang dituju.
+                            </p>
+                            <img src="img/lh1/hta.png" height="100%" width="100%">
+                        </li>
+                        <li id="dika">
+                            <b>Pembeli ( mencakup order, delivery dan payment) </b>
+                            <center><img src="img/lh1/hta1.png" height="100%"></center>
+                        </li>
+                    </ol>
+
+                    <h2><b>Kontribusi Anggota Kelompok</b></h2>
+                    <p>
+                        Nama : Azri Aliva Alhania <br>
+                        Hal yang dikerjakan :<br>
+                        1. HTA Order<br>
+                        2. Area Kerja LH 1<br><br>
+
+                        Nama : Fahmi Faturahman<br>
+                        Hal yang dikerjakan :<br>
+                        1. Menuliskan hasil dari Implikasi yang sudah didiskusikan<br>
+                        2. Analisis Sistem saat ini (kekurangan kelebihan berdasarkan survei untuk pengguna )<br><br>
+
+                        Nama : Ferdhika Yudira<br>
+                        Hal yang dikerjakan :<br>
+                        1. Membuat Google form dan mengumpulkan hasil survei untuk pengguna<br>
+                        2. Mengetik ulang deskrpsi ringkas karakteristik utama, lingkungan teknis dan sosial<br><br>
+
+                        Nama : Restu Agustini<br>
+                        Hal yang dikerjakan :<br>
+                        1. Mewawancarai driver go-food<br>
+                        Narasumber : Sugandi<br>
+                        Kontak : 089628457202<br>
+                        2. Membuat HTA untuk drive<br>
+                    </p>
+
+                    <h2><b>Analisis Sistem saat ini</b></h2>
+                    <ol type="A">
+                        <li>
+                            <b>Pembeli</b>
+                            <ul>
+                                <li>Positif<br>
+Tampilan aplikasi GoFood sangat mudah dimengerti oleh kebanyakan responden. Dengan
+tampilan yang sederhana dari GoFood, dapat mepermudah proses Order, Payment dan Delivery.
+Tampilan GoFood memiliki banyak gambar atau icon yang mudah dimengerti maksud dan tujuannya
+oleh user. Walaupun GoFood menyediakan Payment secara online yaitu GoPay, responden kami
+lebih memilih untuk pembayaran lewat tunai.</li>
+                                <li>Negatif<br>
+                                Setelah hasil survey, kami dapat mengetahui beberapa kekurangan dari aplikasi GoFood ini
+                                yakni ilustrasi gambar makanan atau minuman yang kurang. Selain itu pada GoFood terdapat fitur
+                                “Near Me” yakni melacak tempat makan apa yang ada disekitar user yang ingin membeli, hanya saja
+                                fitur ini masih kurang berguna, karena tempat makan tersebut menurut responden masih terlalu
+                                jauh.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Driver</b>
+                            <ul>
+                                <li>Positif<br>
+                                Tampilan untuk driver yang baru lebih singkat alur penggunaannya.
+                                </li>
+                                <li>Negatif<br>
+                                Setelah mewawancarai driver GoFood kami mendapat beberapa keluhan, salah satunya
+adalah aplikasi yang boros batre, dikarenakan GPS smartphone harus selalu menyala.
+Hal lain yang menjadi keluhan dari driver go-food adalah tampilannya berubah terlalu pesat dari
+versi sebelumnya ke versi yang baru sehingga membingungkan psebagian driver.
+                                </li>
+                            </ul>
+                            <b>Analisis Sistem GoFood</b><br>
+                            Terotomasi<br>
+                            <ul>
+                                <li>Sistem merekomendasikan tempat makan disekitar pembeli</li>
+                                <li>Metode pembayaran secara online dan manual</li>
+                                <li>Pembeli menunngu pesanan datang</li>
+                            </ul>
+                            Manual<br>
+                            <ul>
+                                <li>Pembeli mencari tempat makan disekitarny</li>
+                                <li>Petode pembayaran manual</li>
+                                <li>Pembeli datang langsung ke tempat makan</li>
+                            </ul>
+                            <b>Hasil Survey dengan menggunakan Google Form</b>
+                            <ol>
+                                <li>
+                                    <b>Nama :</b> Neng Depi Nurhayati<br>
+                                    <b>Profesi :</b> Pelajar<br>
+                                    <b>Pernah menggunakan aplikasi Go Food by Gojek?</b><br>
+                                    Tidak<br>
+                                    <b>Jika pernah menggunakan Go Food, kapan terakhir menggunakan?</b><br>
+                                    Belum pernah menggunakan<br>
+                                    <b>Apakah aplikasi go food mudah digunakan dan di pahami? jika ya, jelaskan apa yang
+                                    mudah untuk di pahaminya? dan jika tidak, jelaskan</b><br>
+                                    Tidak tahu karena belum pernah menggunakan<br>
+                                    <b>Lebih memilih pembayaran online atau tunai? Kenapa?</b><br>
+                                    Online, karena lebih praktis.<br>
+                                    <b>Jika kami akan membuat aplikasi serupa, adakah fitur yang ingin anda usulkan atau<br>
+                                    tambahkan?</b><br>
+                                    Tidak
+                                </li>
+                                <li>
+                                    <strong>Nama :</strong> Kintan <br /><strong>Profesi :</strong> Pelajar <br /><strong>Pernah menggunakan aplikasi Go Food by Gojek?</strong> <br />Ya <br /><strong>Jika pernah menggunakan Go Food, kapan terakhir menggunakan?</strong> <br />Akhir tahun lalu <br /><strong>Apakah aplikasi go food mudah digunakan dan di pahami? jika ya, jelaskan apa yang </strong><br /><strong>mudah untuk di pahaminya? dan jika tidak, jelaskan</strong> <br />Ya, cara pemesanannya <br /><strong>Lebih memilih pembayaran online atau tunai? Kenapa?</strong> <br />Tunai <br /><strong>Jika kami akan membuat aplikasi serupa, adakah fitur yang ingin anda usulkan atau </strong><br /><strong>tambahkan?</strong> <br />Tambahkan foto di setiap makanan dan minuman dalam menunya
+                                </li>
+                                <li>
+                                    <strong>Nama :</strong> Ridho <br /><strong>Profesi :</strong> Pelajar <br /><strong>Pernah menggunakan aplikasi Go Food by Gojek?</strong> <br />Tidak <br /><strong>Jika pernah menggunakan Go Food, kapan terakhir menggunakan?</strong> <br />Tidak <br /><strong>Apakah aplikasi go food mudah digunakan dan di pahami? jika ya, jelaskan apa yang </strong><br /><strong>mudah untuk di pahaminya? dan jika tidak, jelaskan</strong> <br />Ya, karena aplikasinya sederhana <br /><strong>Lebih memilih pembayaran online atau tunai? Kenapa?</strong> <br />Tunai <br /><strong>Jika kami akan membuat aplikasi serupa, adakah fitur yang ingin anda usulkan atau </strong><br /><strong>tambahkan?</strong> <br />Tidak
+                                </li>
+                                <li>
+                                    <strong>Nama :</strong> Naufal Hisyam <br /><strong>Profesi :</strong> Mahasiswa <br /><strong>Pernah menggunakan aplikasi Go Food by Gojek?</strong> <br />Tidak <br /><strong>Jika pernah menggunakan Go Food, kapan terakhir menggunakan?</strong> <br />kan ga pernah pake._. <br /><strong>Apakah aplikasi go food mudah digunakan dan di pahami? jika ya, jelaskan apa yang </strong><br /><strong>mudah untuk di pahaminya? dan jika tidak, jelaskan</strong> <br />kaga tauu.. <br /><strong>Lebih memilih pembayaran online atau tunai? Kenapa?</strong> <br />kalau yang dibayarnya makanan mending tunai, jadi kembalian gampang~ <br /><strong>Jika kami akan membuat aplikasi serupa, adakah fitur yang ingin anda usulkan atau </strong><br /><strong>tambahkan?</strong> <br />milih yang nganter makananya wkakakk :v ga deng apa yak... kurang tau juga soalnya kaga <br />pernah pake go food, tapi saran sih pake fitur yang emang belum ada, contoh misal pesen <br />nasgor, toppingnya milih gitu2 dah pedes atau kaga, ya gitu dah pokonyaaa~~
+                                </li>
+                                <li>
+                                    <strong>Nama :</strong> Muhammad Husain F. <br /><strong>Profesi :</strong> Pelajar <br /><strong>Pernah menggunakan aplikasi Go Food by Gojek?</strong> <br />Ya <br /><strong>Jika pernah menggunakan Go Food, kapan terakhir menggunakan?</strong> <br />Januari <br /><strong>Apakah aplikasi go food mudah digunakan dan di pahami? jika ya, jelaskan apa yang </strong><br /><strong>mudah untuk di pahaminya? dan jika tidak, jelaskan</strong> <br />Iya, tinggal pilih tempat dan menu makanannya <br /><strong>Lebih memilih pembayaran online atau tunai? Kenapa?</strong> <br />tergantung, tapi lebih mudah online <br /><strong>Jika kami akan membuat aplikasi serupa, adakah fitur yang ingin anda usulkan atau </strong><br /><strong>tambahkan? </strong><br />Discount, voucher
+                                </li>
+                                <li>
+                                    <strong>Nama :</strong> Muhammad Satria Prawira <br /><strong>Profesi :</strong> Pelajar <br /><strong>Pernah menggunakan aplikasi Go Food by Gojek?</strong> <br />Ya <br /><strong>Jika pernah menggunakan Go Food, kapan terakhir menggunakan?</strong> <br />2 Bulan Lalu <br /><strong>Apakah aplikasi go food mudah digunakan dan di pahami? jika ya, jelaskan apa yang </strong><br /><strong>mudah untuk di pahaminya? dan jika tidak, jelaskan</strong> <br />Mudah dipahami karena memiliki banyak gambar yang dapat dimengerti maksud dan <br />tujuannya <br /><strong>Lebih memilih pembayaran online atau tunai? Kenapa?</strong> <br />Tunai, lebih aman <br /><strong>Jika kami akan membuat aplikasi serupa, adakah fitur yang ingin anda usulkan atau </strong><br /><strong>tambahkan?</strong> <br />Real time food tracking
+                                </li>
+                                <li>
+                                    <strong>Nama :</strong> Reyvan Adryan R <br /><strong>Profesi :</strong> Mahasiswa <br /><strong>Pernah menggunakan aplikasi Go Food by Gojek?</strong> <br />Tidak <br /><strong>Jika pernah menggunakan Go Food, kapan terakhir menggunakan?</strong> <br />Tidak pernah <br /><strong>Apakah aplikasi go food mudah digunakan dan di pahami? jika ya, jelaskan apa yang </strong><br /><strong>mudah untuk di pahaminya? dan jika tidak, jelaskan</strong> <br />Ya <br /><strong>Lebih memilih pembayaran online atau tunai? Kenapa?</strong> <br />Tunai lebih simple dan mudah <br /><strong>Jika kami akan membuat aplikasi serupa, adakah fitur yang ingin anda usulkan atau </strong><br /><strong>tambahkan?</strong> <br />Fitur bayar ditempat
+                                </li>
+                                <li>
+                                    <strong>Nama :</strong> Al Pepa Indra <br /><strong>Profesi :</strong> Pelajar <br /><strong>Pernah menggunakan aplikasi Go Food by Gojek?</strong> <br />Ya <br /><strong>Jika pernah menggunakan Go Food, kapan terakhir menggunakan?</strong> <br />6 bulan lalu <br /><strong>Apakah aplikasi go food mudah digunakan dan di pahami? jika ya, jelaskan apa yang </strong><br /><strong>mudah untuk di pahaminya? dan jika tidak, jelaskan</strong> <br />Ya, karena tampilan yg bagus dan simple jadi sangat mudah di pahami <br /><strong>Lebih memilih pembayaran online atau tunai? Kenapa?</strong> <br />Tunai, karena lebih praktis <br /><strong>Jika kami akan membuat aplikasi serupa, adakah fitur yang ingin anda usulkan atau </strong><br /><strong>tambahkan?</strong> <br />Fitur gratis ongkir
+                                </li>
+                                <li>
+                                    <strong>Nama :</strong> Hanna Hafifah <br /><strong>Profesi :</strong> Pelajar <br /><strong>Pernah menggunakan aplikasi Go Food by Gojek?</strong> <br />Ya <br /><strong>Jika pernah menggunakan Go Food, kapan terakhir menggunakan?</strong> <br />Sekitar sebulan yang lalu tapi tidak sampai order makanan <br /><strong>Apakah aplikasi go food mudah digunakan dan di pahami? jika ya, jelaskan apa yang </strong><br /><strong>mudah untuk di pahaminya? dan jika tidak, jelaskan</strong> <br />Ya, user interfacenya cukup friendly dan gampang dimengerti untuk yang pertama kali pakai. <br /><strong>Lebih memilih pembayaran online atau tunai? Kenapa?</strong> <br />online karena lebih praktis aja untuk jaga-jaga ketika ga sempet untuk ngambil uang buat <br />bayar tunai <br /><strong>Jika kami akan membuat aplikasi serupa, adakah fitur yang ingin anda usulkan atau </strong><br /><strong>tambahkan?</strong> <br />memberikan rekomendasi tempat makan 'near me' nya jangan terlalu kejauhan, tampilan <br />setiap menu nya kurang memperlihatkan makanannya seperti apa
+                                </li>
+                                <li>
+                                    <strong>Nama :</strong> Debora Eirene <br /><strong>Profesi :</strong> Pelajar <br /><strong>Pernah menggunakan aplikasi Go Food by Gojek?</strong> <br />Tidak <br /><strong>Jika pernah menggunakan Go Food, kapan terakhir menggunakan?</strong> <br />- <br /><strong>Apakah aplikasi go food mudah digunakan dan di pahami? jika ya, jelaskan apa yang </strong><br /><strong>mudah untuk di pahaminya? dan jika tidak, jelaskan</strong> <br />- <br /><strong>Lebih memilih pembayaran online atau tunai? Kenapa?</strong> <br />Tunai <br /><strong>Jika kami akan membuat aplikasi serupa, adakah fitur yang ingin anda usulkan atau </strong><br /><strong>tambahkan?</strong> <br />dapat di beri kepastian berapa lama pesanan akan datang
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+
+                    <h2><b>Impilikasi</b></h2>
+                    <ol>
+                        <li><b>Pemesan</b>
+                        <table>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th>Implikasi</th>
+                            </tr>
+                            <tr>
+                                <td>Ukuran Font</td>
+                                <td>Normal, karena tidak ada kebutuhan khusus untuk user. Jika terdapat user yang
+membutuhkan kebutuhan khusus maka ukuran font dapat disesuaikan</td>
+                            </tr>
+                            <tr>
+                                <td>Warna Font</td>
+<td>Hitam, karena warna hitam membuat tampilan sederhana</td>
+                            </tr>
+                            <tr>
+                                <td>Ukuran Layar</td>
+<td>Disesuaikan dengan layar smarthphone pengguna</td>
+                            </tr>
+                            <tr>
+                                <td>Warna Background</td>
+<td>Putih, karena dengan warna putih warna font, icon, dan ilustrasi makanan dan
+minuman terlihat jelas</td>
+                            </tr>
+                            <tr>
+                                <td>Bahasa</td>
+<td>Indonesia</td>
+                            </tr>
+                            <tr>
+                                <td>Gender</td>
+<td>Laki-laki atau wanita</td>
+                            </tr>
+                            <tr>
+                                <td>Umur</td>
+<td>15-60 tahun, dengan target minimal umur 15 tahun karena pada umumnya
+masyarakat sudah mengerti sistem aplikasi smartphone secara umumnya</td>
+                            </tr>
+                            <tr>
+                                <td>Kemampuan Perseptual</td>
+<td>Penglihatan dan pendengaran, karena sistem memiliki tampilan yang mudah
+digunakan jika menggunakan penglihatan yang baik</td>
+                            </tr>
+                            <tr>
+                                <td>Kemampuan Kognitif</td>
+<td>Membaca dan mendengar, pada umumnya sistem berisi teks</td>
+                            </tr>
+                        </table>
+                        </li>
+                        <li><b>Driver</b>
+                        <table>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th>Implikasi</th>
+                            </tr>
+                            <tr>
+                                <td>Ukuran Font</td>
+                                <td>Normal, karena tidak ada kebutuhan khusus untuk user. Jika terdapat
+user yang membutuhkan kebutuhan khusus maka ukuran font dapat
+disesuaikan</td>
+                            </tr>
+                            <tr>
+                                <td>Warna Font</td>
+<td>Hitam, karena warna hitam membuat tampilan sederhana</td>
+                            </tr>
+                            <tr>
+                                <td>Ukuran Layar</td>
+<td>Disesuaikan dengan layar smarthphone pengguna</td>
+                            </tr>
+                            <tr>
+                                <td>Warna Background</td>
+<td>Putih, karena dengan warna putih warna font, icon, dan ilustrasi makanan dan
+minuman terlihat jelas</td>
+                            </tr>
+                            <tr>
+                                <td>Bahasa</td>
+<td>Indonesia</td>
+                            </tr>
+                            <tr>
+                                <td>Gender</td>
+<td>Laki-laki atau wanita</td>
+                            </tr>
+                            <tr>
+                                <td>Umur</td>
+<td>17-55 tahun, pada rentan umur seperti itu driver atau kurir mampu
+mengendarai kendaraan dengan baik</td>
+                            </tr>
+                            <tr>
+                                <td>Kemampuan Perseptual</td>
+<td>Penglihatan dan pendengaran, karena sistem memiliki tampilan yang
+mudah digunakan jika menggunakan penglihatan yang baik, dan juga
+driver dapat mengendarai kendaraan dengan aman</td>
+                            </tr>
+                            <tr>
+                                <td>Kemampuan Kognitif</td>
+<td>Membaca dan mendengar, pada umumnya sistem berisi teks</td>
+                            </tr>
+                        </table>
+                        </li>
+                    </ol>
+
 				</div>
 			</div>
 		</div>
