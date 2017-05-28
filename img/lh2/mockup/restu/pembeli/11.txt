@@ -1,0 +1,3 @@
+Setelah pembeli menambah opsi order maka akan muncul pop up dan perkiraan harga dari makanan dan minuman yang di pesan.
+
+Lalu user meng-klik pop up tersebut dan akan muncul form konfirmasi pesanan

@@ -1,0 +1,2 @@
+Form konfirmasi pesanan terdiri dari daftar pesanan, alamat pengantaran, biaya antar dan pembayaran apa yang akan di pilih. 
+Contoh pembeli memilih pembayaran tunai. Lalu klik button pesan.

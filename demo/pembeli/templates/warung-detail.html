@@ -1,0 +1,37 @@
+<ion-view class="marketDk-pane home-screen" align-title="left" view-title="{{ warung.name }}">
+
+	<ion-content class="marketDk-body" has-header="true">
+	
+		<div class="card">
+			<div class="item item-text-wrap dkItem-kotak">
+				<h2>{{ warung.name }}</h2>
+				<p>{{ warung.alamat }}</p>
+				<p><strong class="statusBuka">Buka</strong> {{ warung.jam }}</p>
+			</div>
+		</div>
+
+		<div class="list" style="margin: 10px 10px; color: #000;">
+		Daftar Menu
+			<label class="item item-input dk-cari">
+				<i class="icon ion-search placeholder-icon"></i>
+				<input type="text" ng-model="q" placeholder="Cari menu">
+			</label>
+		</div>
+
+		<div class="row">
+			<div class="col col-100">
+				<div class="list">
+					<div class="item item-thumbnail-left dkItem-kotak" ng-repeat="m in makanan | filter:q as name">
+						<img src="{{ m.src }}">
+						<h2>{{ m.name }}</h2>
+						<p>Rp. {{ m.price || '0' }}</p>
+						<div class="text-right">
+							<button class="button button-dk button-small" ng-click="konfirmasi()">Tambah</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</ion-content>
+</ion-view>

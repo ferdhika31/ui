@@ -1,0 +1,4 @@
+Tampilan Rekomendasi “21.00”
+Terdapat gambar menu, nama toko, nama makanan, harga, stok makanan / minuman dan pilihan untuk menambahkan menu.
+
+Pada opsi ini karena tidak semua warung dipujas buka hingga malam, maka dengan adanya opsi ini pembeli/mahasiswa yang masih berkegiatan di kampus lebih dari jam 18.00 dapat membeli makanan / minuman dengan opsi 21.00

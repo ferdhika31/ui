@@ -1,0 +1,5 @@
+1. Tampilan awal saat sistem menampilkan daftar pesanan yang dapat diambil kurir/driver. Kurir dapat langsung mengklik button ’lihat detil’ untuk melihat detil pesanan
+
+2. Tampilan detil pesanan. Di sini terdapat daftar menu yang dipesan, informasi mengenai pemesan (nama pemesan, no telp), alamat pengiriman, metode pembayaran, estimasi biaya belanja, dan biaya pengantaran.
+
+3. Tampilan user profile kurir/driver

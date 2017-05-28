@@ -1,0 +1,61 @@
+<ion-view class="marketDk-pane home-screen" view-title="Login" hide-nav-bar="true">
+	<ion-content scroll="true" class="marketDk-bodyLogin">
+		<div class="row">
+			<div class="col">
+				<div class="marketDk-header">
+					<img src="img/garpu_sendok.jpg" width="60%">
+
+					<img src="img/logo.png" width="80%">
+				</div> 
+
+				<form ng-submit="masuk()">
+
+
+					<div class="row">
+						<div class="col col-10" style="margin-right: 10px;">
+							<i class="ion ion-ios-telephone iconna"></i>
+						</div>
+						<div class="col col-2">
+							<label class="item item-input">
+								<input type="text" placeholder="No HP" >
+							</label>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col col-10" style="margin-right: 10px;">
+							<i class="ion ion-key iconna"></i>
+						</div>
+						<div class="col col-2">
+							<label class="item item-input">
+								<input type="password" placeholder="Password" >
+							</label>
+						</div>
+					</div>
+
+					<div class="row text-center">
+						<div class="col">
+							<button class="button button-dk" ng-click="home()">
+								Masuk 
+							</button>
+						</div>
+					</div>
+				</form>
+				<div class="row text-center">
+					<div class="col" style="color: #000;"> 
+						<a ng-click="lupapassword()" style="text-decoration: underline;color: #000; font-size: 12px;">
+							Lupa Password?
+						</a> 
+						<br>
+						Belum punya akun?
+						<br><br>
+						<button ng-click="daftar()" class="button button-small button-dk" >
+							Daftar 
+						</button>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

@@ -1,0 +1,4 @@
+Tampilan Rekomendasi “Promosi”
+Terdapat gambar menu, nama toko, nama makanan, harga, stok makanan / minuman dan pilihan untuk menambahkan menu 
+
+Menampilkan menu makanan / minuman yang di promosikan oleh warung- warung yang ada di pujas

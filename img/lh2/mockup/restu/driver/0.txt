@@ -1,0 +1,2 @@
+Tampilan ini adalah halaman awal yang akan mempermudah kurir untuk mengakses aktivitasnya secara rutin.
+Yaitu terdapat menu Akun Saya, Saldo dan Review Order

@@ -1,0 +1,5 @@
+Salah satu tampilan untuk kategori aneka nasi. Menu yang ada didalamnya terdiri dari 
+nama toko;
+nama menu dan harga;
+stok makanan;
+tambah pesanan;

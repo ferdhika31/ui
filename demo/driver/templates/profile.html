@@ -1,0 +1,74 @@
+<ion-view class="marketDk-pane home-screen" align-title="left" view-title="Pesanan Selesai" hide-nav-bar="true">
+
+	<ion-header class="bar bar-header marketDk-nav crop">
+		<img src="img/logo.png" height="100%" ng-click="home()"/>
+
+		<div class="dk-right">
+			<label class="toggle">
+				<input type="checkbox" checked="">
+				<div class="track">
+					<div class="handle"></div>
+				</div>
+			</label>
+			<button class="button marketDk-button-clear icon ion-ios-briefcase" style="padding: 0 0px;" ng-click="history()">
+			</button>
+			<button class="button marketDk-button-clear icon ion-android-person" style="padding: 0 0px;" ng-click="profile()">
+			</button>
+		</div>
+	</ion-header>
+
+	<ion-content class="marketDk-body boga-header" has-header="true">
+
+		<div class="card" >
+			<div class="item item-text-wrap dkItem-kotak" style="color:#000;">
+				
+				<div class="row" style="padding: 0px;font-size: 16px;">
+					<div class="col col-60" style="padding: 0px;">Ferdhika Yudira</div>
+					<div class="col text-right" style="padding: 0px; color: green;">Ubah</div>
+				</div>
+
+				<p style="font-size: 10px;">fer@dika.web.id</p>
+				<br>
+				<p style="font-size: 12px;">083821708285</p>				
+			</div>
+		</div>
+
+		<div class="card" >
+			<div class="item item-text-wrap dkItem-kotak" style="color:#000;">
+				
+				<div class="row" style="padding: 0px;font-size: 16px;">
+					<div class="col col-60" style="padding: 0px;">Rating</div>
+					<div class="col text-right" style="padding: 0px; color: #000;">
+						<i class="ion ion-android-star" ng-repeat="i in [1,2,3,4]"></i><i class="ion ion-android-star-half"></i>
+					</div>
+				</div>				
+			</div>
+		</div>
+
+		<div class="card" >
+			<div class="item item-text-wrap dkItem-kotak" style="color:#000;">
+				
+				<div class="row" style="padding: 0px;font-size: 16px;">
+					<div class="col col-60" style="padding: 0px;">Bank</div>
+					<div class="col text-right" style="padding: 0px; color: green;">Rp 90.000</div>
+				</div>				
+			</div>
+		</div>
+
+		<div class="card" >
+			<div class="item item-text-wrap dkItem-kotak" style="color:#000;">
+				<a>Ubah Kata Sandi</a><br><br>
+				<a>Ubah Bahasa</a>			
+			</div>
+		</div>
+
+		<div class="dk-kotak">
+			<button class="button button-block button-dk" ng-click="keluar()">
+				Keluar
+			</button>
+		</div>
+		
+		
+	</ion-content>
+
+</ion-view>

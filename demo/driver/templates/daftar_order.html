@@ -1,0 +1,99 @@
+<ion-view class="marketDk-pane home-screen" align-title="left" view-title="Daftar Order" hide-nav-bar="true">
+
+	<ion-header class="bar bar-header marketDk-nav crop">
+		<img src="img/logo.png" height="100%" ng-click="home()"/>
+
+		<div class="dk-right">
+			<label class="toggle">
+				<input type="checkbox" checked="">
+				<div class="track">
+					<div class="handle"></div>
+				</div>
+			</label>
+			<button class="button marketDk-button-clear icon ion-ios-briefcase" style="padding: 0 0px;" ng-click="history()">
+			</button>
+			<button class="button marketDk-button-clear icon ion-android-person" style="padding: 0 0px;" ng-click="profile()">
+			</button>
+		</div>
+	</ion-header>
+<!-- 
+	<ion-nav-buttons side="right">
+		<div id="cart-container">
+			<button class="button marketDk-button-clear icon ion-android-cart" style="padding: 0 0px;" ng-click="cart()">
+			</button>
+			<button class="button marketDk-button-clear icon ion-android-person" style="padding: 0 0px;" ng-click="profile()">
+			</button>
+		</div>
+	</ion-nav-buttons> -->
+
+	<ion-content class="marketDk-body boga-header" has-header="true">
+	
+		<div style="font-size: 25px;margin: 10px;color:#000;font-weight: 300;">
+			Daftar Order
+		</div>
+
+
+		<div class="dk-kotak">
+			<div class="row" style="padding:0px;">
+				<div class="col text-left" style="border-style: solid;border-right: thick double #ff9900;">
+					<div class="row" style="padding:0px;">
+						<div class="col" style="padding:0px;">
+							<button class="iconorder marketDk-button-clear iconKotak ion-bag" style="font-size: 50px;"></button>
+						</div>
+						<div class="col col-75" style="padding:0px; font-size: 13px; font-weight: 300;">
+							Kantin<br> Mutiara
+						</div>
+					</div>
+				</div>
+
+				<div class="col text-left">
+					<div class="row" style="padding:0px;">
+						<div class="col" style="padding:0px;">
+							<button class="iconorder marketDk-button-clear iconKotak ion-social-usd" style="font-size: 50px;"></button>
+						</div>
+						<div class="col col-75" style="padding:0px; font-size: 13px; font-weight: 300;">
+							Total Biaya<br>
+							Rp 32.000
+						</div>
+					</div>					
+				</div>
+			</div>
+
+			<button class="button button-block button-dk" ng-click="lihatDetail()">
+				Lihat Detail 
+			</button>
+		</div>
+
+		<div class="dk-kotak">
+			<div class="row" style="padding:0px;">
+				<div class="col text-left" style="border-style: solid;border-right: thick double #ff9900;">
+					<div class="row" style="padding:0px;">
+						<div class="col" style="padding:0px;">
+							<button class="iconorder marketDk-button-clear iconKotak ion-bag" style="font-size: 50px;"></button>
+						</div>
+						<div class="col col-75" style="padding:0px; font-size: 13px; font-weight: 300;">
+							Kantin <br>Catur
+						</div>
+					</div>
+				</div>
+
+				<div class="col text-left">
+					<div class="row" style="padding:0px;">
+						<div class="col" style="padding:0px;">
+							<button class="iconorder marketDk-button-clear iconKotak ion-social-usd" style="font-size: 50px;"></button>
+						</div>
+						<div class="col col-75" style="padding:0px; font-size: 13px; font-weight: 300;">
+							Total Biaya<br>
+							Rp 47.500
+						</div>
+					</div>					
+				</div>
+			</div>
+
+			<button class="button button-block button-dk" ng-click="lihatDetail()">
+				Lihat Detail 
+			</button>
+		</div>
+		
+	</ion-content>
+</ion-view>

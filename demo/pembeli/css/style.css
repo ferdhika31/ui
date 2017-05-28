@@ -1,0 +1,343 @@
+/* Empty. Add your own CSS if you like */
+body {
+  cursor: url('https://ionicframework.com/img/finger.png'), auto;
+}
+
+.spinner svg {
+	width: 68px;
+	height: 68px;
+	stroke: #444;
+	fill: #000;
+ 	margin-top: 20px;
+}
+
+.boga-header{
+	top: 44px;
+}
+
+.boga-subheader{
+	top: 68px;
+}
+
+.marketDk-nav{
+	background-color: #fff391;
+	color: #ff9900;
+}
+
+.marketDk-nav .title{
+	color: #ff9900;
+	text-align: left;
+}
+
+.bar .button.market-btn, .bar button.market-btn{
+	font-size: 100px;
+}
+
+.button-clear.button-clear {
+    border-color: transparent;
+    background: none;
+    box-shadow: none;
+    color: #ff9900;
+}
+
+.marketDk-button-clear{
+    border: none;
+    background: 0 0;
+    color:#ff9900;
+}
+
+.marketDk-button-clear:hover{
+    color:#ff9900;
+}
+
+.marketDk-button-clear:focus{
+	border: none;
+    background: none;
+}
+
+.marketDk-body{
+	background: rgba(255,243,145, .6);
+	color: #fff;
+}
+
+.marketDk-bodyLogin{
+	background: rgba(255,243,145);
+	color: #fff;
+}
+
+.marketDk-header{
+	text-align: center;
+	color: #34495E;
+	margin-top: 50px;
+}
+
+.marketDk-header h4{
+	font-weight: bold;
+	color: #fff391;
+}
+
+.marketDk-header i{
+	font-size: 50px;
+	color: #34495E;
+}
+
+.iconna{
+	font-size: 40px;
+	color:#ff9900;
+}
+
+/* Button */
+.button.button-dk {
+	border-color: transparent;
+	background-color: #ff9900;
+	color: #000; 
+}
+.button.button-dk:hover {
+	color: #000;
+	text-decoration: none; 
+}
+.button.button-dk.active, .button.button-dk.activated {
+	background-color: #ff9900; 
+	opacity: 0.7;
+}
+.button.button-dk.button-clear {
+	border-color: transparent;
+	background: none;
+	box-shadow: none;
+	color: #ff9900; 
+}
+.button.button-dk.button-icon {
+	border-color: transparent;
+	background: none; 
+}
+.button.button-dk.button-outline {
+	border-color: #ff9900;
+	background: transparent;
+	color: #ff9900; 
+}
+.button.button-dk.button-outline.active, .button.button-dk.button-outline.activated {
+	background-color: #ff9900;
+	box-shadow: none;
+	color: #000; 
+}
+
+/**/
+.title-image {
+    margin-top: 8px;
+    height: 27px;
+    margin-left: -25px;
+}
+
+.crop img {
+    width: 160px;
+    height: 30px;
+    margin: 0 0 0 -25px;
+}
+
+/* */
+.dk-right{
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	bottom: 5px;
+}
+
+.like-btn{
+    top: 150px;
+    display: block;
+    position: absolute;
+    color: #fff;
+}
+
+.wisata-header{
+	background-color: #444;
+	/*height: 230px;*/
+	overflow: hidden;
+}
+
+.img-circle {
+	border-radius: 50%;
+}
+
+.wisata-media {background: #000; /*min-height: 237px;*/ overflow: hidden; position: relative;}
+.wisata-media .wisata-background-image {
+	/*opacity: 0.3;*/
+	position: absolute;
+	object-cover:fit;
+	top:-100%;
+	left:0;
+	right: 0;
+	bottom:-100%;
+	margin: auto;
+}
+.wisata-media .wisata-details {text-align: center; position: absolute; width: 100%; color: #fff; padding: 20px 5% 0 5%;}
+.wisata-media .wisata-details .wisata-image {
+	width: 76px;
+	height:76px;
+	object-cover:fit; 
+	/*border: 4px solid rgba(255, 255, 255, 0.9);*/
+}
+
+
+/*Banner*/
+.slider{
+	height: 120px;
+}
+
+.slider-produk{
+	height: 250px;
+}
+
+.marketDk-sliderHome{
+	box-shadow:1px 1px 10px #b2b2b2;
+}
+
+.slider-slide {
+	color: #000;
+	background-color: #fff;
+	text-align: center;
+
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+}
+
+.slider-pager .slider-pager-page {
+    color: #FFF;
+}
+
+.slider-pager-page:only-of-type{
+	display:none;
+}
+
+#banner1{
+	height: 100%;
+	background-image: url('../img/banner.png'); 
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#banner2{
+	height: 100%;
+	background-image: url('../img/banner2.png'); 
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#banner3{
+	height: 100%;
+	background-image: url('../img/banner3.png'); 
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.placeholder-icon {
+    color: #000;
+}
+
+.dk-cari{
+	border-color: #000;
+}
+
+/**/
+.dkItem-kotak{
+	background-color: rgba(255,243,145);
+	border-color: rgba(255,243,145);
+}
+
+.dkItemProses-kotak{
+	background-color: #b00;
+	border-color: #b00;
+}
+
+.dkItemSelesai-kotak{
+	background-color: #33B10B;
+	border-color: #33B10B;
+}
+
+/**/
+.dk-kotak{
+	background-color: rgba(255,243,145);
+	color: #000;
+	text-transform: uppercase;
+	margin: 10px;
+	font-size: 8px;
+	font-weight: bold;
+}
+
+.iconKotak{
+	font-size: 70px;
+	color: #ff9900;
+	text-transform: uppercase;
+}
+
+.iconKotak:active{
+	background-color: none;
+}
+
+
+
+.dk-kotakR{
+	padding-top: 10px;
+	background-color: rgba(255,243,145);
+	color: #000;
+	margin-right: 10px;
+	padding-right: 10px;
+}
+
+.dk-kotakL{
+	padding-top: 10px;
+	background-color: rgba(255,243,145);
+	color: #000;
+	margin-left: 10px;
+	padding-left: 10px;
+}
+
+/* Card */
+.card-title-shadow{
+	width: 100%;
+	background-color: rgba(255, 243, 145, .5);
+}
+
+.text-on-image{
+	position: absolute;
+	z-index: 10;
+	bottom: 0px;
+	padding: 15px;
+	text-align: left;
+}
+
+.text-on-image h2{
+	color: #000;
+	font-size: 1em !important;
+	font-weight: bold;
+}
+
+.text-on-image p
+{
+  color: #000;
+  font-weight: 400;
+}
+
+.statusBuka{
+	color: #1CA829;
+}
+
+input[type="number"]{
+	width: 40px;
+	height: 25px;
+	background-color: #fff;
+	text-align:right;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ff9900;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+.item.active, .item.activated, .item-complex.active .item-content, .item-complex.activated .item-content, .item .item-content.active, .item .item-content.activated {
+    background-color: none;
+}

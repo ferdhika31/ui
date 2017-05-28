@@ -1,0 +1,37 @@
+<ion-view view-title="{{ kat.name }}">
+	<ion-content overflow-scroll='false' header-shrink scroll-event-interval="5">
+		<div class="wisata-header">
+			<div class="wisata-media">
+				<img ng-src="{{kat.src}}" style="width: 100%;height: 210px;">
+			</div>
+			<div class="row like-btn" style="background-color:#000;-moz-opacity: 0.6;opacity: 0.6;">
+				<div class="col text-center">
+					<strong>{{ kat.name }}</strong><br>
+					{{ kat.deskripsi }}
+					<!-- <div ng-class="liked ? 'bg-color-red like-button-with-text':'bg-color-white like-button'" ng-click="like()">
+						<i class="ion-heart" ng-class="liked ? 'color-white':'color-red'"></i>
+						<span ng-if="liked">Liked</span>
+					</div> -->
+				</div>
+			</div>
+		</div>
+		
+		<div class="list list-inset" style="margin: 10px 10px;">
+			<label class="item item-input dk-cari">
+				<i class="icon ion-search placeholder-icon"></i>
+				<input type="text" ng-model="q" placeholder="Cari makanan">
+			</label>
+		</div>
+
+		<div class="list card" ng-repeat="w in makanan | filter:q as name" ng-if="kat.id == w.kategori_id">
+			<div class="item item-image" ng-click="detailWarung({{ w.warung_id }})">
+				<img src="{{ w.src }}">
+				<div class="text-on-image card-title-shadow">
+					<h2>{{ w.name }}</h2>
+					<p>{{ w.deskripsi }}</p>
+				</div>
+			</div>
+		</div>
+
+	</ion-content>
+</ion-view>

@@ -1,0 +1,23 @@
+<ion-view class="marketDk-pane home-screen" view-title="Daftar Warung" >
+
+	<ion-content class="marketDk-body">
+
+		<div class="list list-inset" style="margin: 10px 10px;">
+			<label class="item item-input dk-cari">
+				<i class="icon ion-search placeholder-icon"></i>
+				<input type="text" ng-model="q" placeholder="Cari warung">
+			</label>
+		</div>
+
+		<div class="list card" ng-repeat="w in warung | filter:q as name">
+			<div class="item item-image" ng-click="detailWarung({{ w.id }})">
+				<img src="{{ w.src }}">
+				<div class="text-on-image card-title-shadow">
+					<h2>{{ w.name }}</h2>
+					<p>{{ w.alamat }}</p>
+				</div>
+			</div>
+		</div>
+		
+	</ion-content>
+</ion-view>

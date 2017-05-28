@@ -1,0 +1,24 @@
+<ion-modal-view>
+	<ion-header-bar class="marketDk-nav">
+		<h1 class="title">Tambah Catatan Nasi Ayam</h1>
+		<div class="buttons">
+			<button class="button marketDk-button-clear icon ion ion-close" ng-click="closeModalCatatan()">
+			</button>
+		</div>
+	</ion-header-bar>
+
+	<ion-content class="marketDk-body has-footer">
+		<div class="card" >
+			<div class="item item-text-wrap dkItem-kotak" style="color:#ff9900;">
+				Catatan
+				<hr>
+				<textarea style="width:100%;height: 100px;">Jangan pedes ya ayamnya</textarea>
+			</div>
+		</div>
+
+	</ion-content>
+
+	<ion-footer-bar class="bar-stable item-input-inset" keyboard-attach>
+		<button class="button button-block button-dk" style="width:100%" ng-click="closeModalCatatan()">Simpan</button>
+	</ion-footer-bar>
+</ion-modal-view>

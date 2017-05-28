@@ -1,0 +1,4 @@
+Tampilan Rekomendasi “Termurah”
+Terdapat gambar menu, nama toko, nama makanan, harga, stok makanan / minuman dan pilihan untuk menambahkan menu 
+
+Tambah pesanan : dengan menekan navigasi ke atas maka jumlah pesanan akan bertambah

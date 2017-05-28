@@ -1,0 +1,4 @@
+
+Menu awal setelah login. Terdapat Rekomendasi dari harga termurah, menu yang di faforitkan, warung yang buka hingga pukul 09.00 malam dan warung yang sedang melakukan promosi.
+
+Kemudian terdapat juga menu berdasarkan kategori yang akan memudahkan pembeli dalam mencari menu yang diinginkan.

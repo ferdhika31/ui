@@ -1,0 +1,1 @@
+Pada halaman detail pesanan, Ambil pesanan adalah saat kurir akan memproses pesanan. 

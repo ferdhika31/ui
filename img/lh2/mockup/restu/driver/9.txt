@@ -1,0 +1,1 @@
+Review pesanan adalah halaman yang didalamnya terdapat review dari pembeli mengenai makan mau pun jasa pengantaran oleh kurir, karena pembeli harus memberikan tanggapan / ratting di akhir pemesanan.

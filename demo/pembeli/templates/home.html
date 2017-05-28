@@ -1,0 +1,93 @@
+<ion-view class="marketDk-pane home-screen" align-title="left" view-title="Home" hide-nav-bar="true">
+
+	<ion-header class="bar bar-header marketDk-nav crop">
+		<img src="img/logo.png" height="100%" ng-click="home()"/>
+
+		<div class="dk-right">
+			<button class="button marketDk-button-clear icon ion-android-cart" style="padding: 0 0px;" ng-click="cart()">
+			</button>
+			<button class="button marketDk-button-clear icon ion-android-person" style="padding: 0 0px;" ng-click="profile()">
+			</button>
+		</div>
+	</ion-header>
+<!-- 
+	<ion-nav-buttons side="right">
+		<div id="cart-container">
+			<button class="button marketDk-button-clear icon ion-android-cart" style="padding: 0 0px;" ng-click="cart()">
+			</button>
+			<button class="button marketDk-button-clear icon ion-android-person" style="padding: 0 0px;" ng-click="profile()">
+			</button>
+		</div>
+	</ion-nav-buttons> -->
+
+	<ion-content class="marketDk-body boga-header" has-header="true">
+	
+		<ion-slide-box on-slide-changed="slideChanged(index)" class="marketDk-sliderHome">
+			<ion-slide>
+				<div id="banner1">
+				</div>
+			</ion-slide>
+
+			<!-- <ion-slide>
+				<div id="banner2">
+				</div>
+			</ion-slide>
+		
+			<ion-slide>
+				<div id="banner3">
+				</div>
+			</ion-slide> -->
+		</ion-slide-box>
+
+		<div class="list list-inset" style="margin: 10px 10px;">
+			<label class="item item-input dk-cari">
+				<i class="icon ion-search placeholder-icon"></i>
+				<input type="text" placeholder="Cari makanan atau warung" ng-click="cari()">
+			</label>
+		</div>
+
+		<div class="row">
+			<div class="col dk-kotak text-center">
+				<button class="button marketDk-button-clear iconKotak ion-heart" ng-click="terlaris()">
+					
+				</button><br>
+				Terlaris
+			</div>
+
+			<div class="col dk-kotak text-center">
+				<button class="button marketDk-button-clear iconKotak ion-fork" ng-click="hemat()">
+					
+				</button><br>
+				Menu Hemat
+			</div>
+
+			<div class="col dk-kotak text-center">
+				<button class="button marketDk-button-clear iconKotak ion-bag" ng-click="daftarWarung()">
+					
+				</button><br>
+				Daftar Warung
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="col dk-kotakL text-center">
+				<img src="img/makanan/nasi_ayam.png" width="100%" ng-click="kategori(0)">
+			</div>
+			<div class="col dk-kotakR text-center">
+				<img src="img/makanan/kroket.png" width="100%" ng-click="kategori(1)">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col dk-kotakL text-center">
+				<img src="img/makanan/jus_buah_naga.png" width="100%" ng-click="kategori(2)">
+			</div>
+			<div class="col dk-kotakR text-center">
+				<img src="img/makanan/roti.png" width="100%" ng-click="kategori(3)">
+			</div>
+		</div>
+
+		
+	</ion-content>
+</ion-view>

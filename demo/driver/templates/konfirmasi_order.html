@@ -1,0 +1,107 @@
+<ion-view class="marketDk-pane home-screen" align-title="left" view-title='Konfirmasi Pemesanan'>
+
+	<ion-content class="marketDk-body boga-header has-footer" has-header="true">
+
+		<div class="card" >
+			<div class="item item-text-wrap dkItem-kotak" style="color:#ff9900;">
+				
+				Alamat Restoran
+
+				<hr>
+				
+				<p style="color:#000;"><i class="ion ion-location"></i> Kantin Mutiara</p>
+			</div>
+		</div>
+
+		<div class="card" >
+			<div class="item item-text-wrap dkItem-kotak" style="color:#ff9900;">
+				
+				Alamat Antar
+
+				<hr>
+				<div style="margin-bottom: 10px;font-size: 12px;color: #000;">
+					<p style="color:#000;"><i class="ion ion-location"></i> Gedung JTK LT2 Ruang 516
+				</div>
+				
+				<div style="margin-bottom: 10px;">
+					<div class="row" style="padding: 0px;font-size: 12px;">
+						<div class="col" style="padding: 0px;color: #478AFF" ng-click="showCatatanLokasi()">
+							<i class="ion ion-edit"></i> Lihat Catatan
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="card" >
+			<div class="item item-text-wrap dkItem-kotak" style="color:#ff9900;">
+				
+				Detail Pembayaran
+
+				<hr>
+				<div class="row" style="padding: 0px;font-size: 12px;color: #000;">
+					<div class="col col-75" style="padding: 0px;">Perkiraan Harga</div>
+					<div class="col text-right" style="padding: 0px;">Rp 30.000</div>
+				</div>
+				<div class="row" style="padding: 0px;font-size: 12px;color: #000;">
+					<div class="col col-75" style="padding: 0px;">Biaya Antar</div>
+					<div class="col text-right" style="padding: 0px;">Rp 5.000</div>
+				</div>
+				<hr>
+				<div class="row" style="padding: 0px;font-size: 12px;color: #000;">
+					<div class="col col-75" style="padding: 0px;">Total Biaya</div>
+					<div class="col text-right" style="padding: 0px;">Rp 35.000</div>
+				</div>
+				
+				
+
+			</div>
+		</div>
+	
+		<div class="card" >
+			<div class="item item-text-wrap dkItem-kotak" style="color:#ff9900;">
+				<div class="row" style="padding: 0px;font-size: 16px;">
+					<div class="col col-75" style="padding: 0px;">Pesanan</div>
+					<div class="col text-right" style="padding: 0px;">Jumlah</div>
+				</div>
+
+				<hr>
+				<div style="margin-bottom: 10px; color: #000;">
+					<div class="row" style="padding: 0px;font-size: 12px;">
+						<div class="col col-75" style="padding: 0px;">Nasi Ayam</div>
+						<div class="col text-right" style="padding: 0px;">1</div>
+					</div>
+					<div class="row" style="padding: 0px;font-size: 12px;">
+						<div class="col col-90" style="padding: 0px;color: #478AFF" ng-click="tambahCatatan()">
+							<i class="ion ion-edit"></i> Jangan pedes
+						</div>
+					</div>
+				</div>
+				
+				<div style="margin-bottom: 10px;color: #000;">
+					<div class="row" style="padding: 0px;font-size: 12px;">
+						<div class="col col-75" style="padding: 0px;">Jus Buah Naga</div>
+						<div class="col text-right" style="padding: 0px;">1</div>
+					</div>
+					<div class="row" style="padding: 0px;font-size: 12px;">
+						<div class="col col-90" style="padding: 0px;color: #478AFF" ng-click="tambahCatatan()">
+							<i class="ion ion-edit"></i> Es nya dikit aja
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+	</ion-content>
+
+	<ion-footer-bar class="row">
+		<div class="col" style="margin-top:-15px;">
+			<button class="button button-block button-positive ion-ios-telephone" style="width:100%">Telp Pemesan</button>
+		</div>
+		<div class="col" style="margin-top:-15px;">
+			<button class="button button-block button-balanced" style="width:100%" ng-click="ambil()">Ambil</button>
+		</div>
+	</ion-footer-bar>
+
+</ion-view>
