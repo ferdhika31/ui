@@ -74,7 +74,9 @@ angular.module('starter.controllers', [])
 })
 
 .controller('ProfileCtrl', function($scope, $state){
-
+  $scope.keluar = function(){
+    $state.go('app.login');
+  };
 })
 
 .controller('PesananProsesCtrl', function($scope, $state){
